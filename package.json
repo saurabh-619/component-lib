@@ -7,13 +7,13 @@
   "sideEffects": false,
   "types": "dist/typings/index.d.ts",
   "scripts": {
-    "build": "yarn run build:js && yarn run build:types",
+    "build": "npm run build:js && npm run build:types",
     "build:types": "tsc -p tsconfig.build.json",
     "build:js": "rollup -c rollup.config.js",
-    "test": "yarn run test:ts && yarn run test:jest",
+    "test": "npm run test:ts && npm run test:jest",
     "test:jest": "jest",
     "test:ts": "tsc",
-    "lint": "yarn run lint:format && yarn run lint:js",
+    "lint": "npm run lint:format && npm run lint:js",
     "lint:format": "prettier --check \"src/**/*\"",
     "lint:js": "eslint src/**",
     "format": "prettier --write \"src/**/*\"",
@@ -46,9 +46,9 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@storybook/addon-actions": "^6.3.4",
-    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.4",
-    "@storybook/react": "^6.3.4",
+    "@storybook/react": "^3.4.12",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
@@ -78,7 +78,7 @@
     "nanoid": "^3.1.23",
     "polished": "^4.1.3",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": ">=16.12.0",
+    "react-dom": ">=16.12.0"
   }
 }
