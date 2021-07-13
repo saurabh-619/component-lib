@@ -1,6 +1,6 @@
 {
   "name": "@saurabh-619/component-lib",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -18,7 +18,7 @@
     "lint:js": "eslint src/**",
     "format": "prettier --write \"src/**/*\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook" 
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
