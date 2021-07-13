@@ -15,10 +15,10 @@ jobs:
           node-version: "16.x"
           registry-url: "https://npm.pkg.github.com"
           scope: "@saurabh-619"
-      - run: npm ci
-      - run: npm run lint
-      # - run: npm run test
-      - run: npm run build
-      - run: npm publish
+      - run: yarn ci
+      - run: yarn run lint
+      # - run: yarn run test
+      - run: yarn run build
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
