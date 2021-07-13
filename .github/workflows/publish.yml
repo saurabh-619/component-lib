@@ -17,7 +17,7 @@ jobs:
           scope: "@saurabh-619"
       - run: npm ci
       - run: npm run lint
-      - run: npm run test
+      # - run: npm run test
       - run: npm run build
       - run: npm publish
         env:
